@@ -1,17 +1,27 @@
 package kauanrod.produtosapi.model;
 
-// POJ
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+import java.util.UUID;
+
+@Entity
+@Table(name = "produto")
 public class Produto {
-    private String id;
+    @Id
+    @Column(name = "id")
+    private UUID id;
     private String nome;
     private String descricao;
     private Double preco;
 
-    public String getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
