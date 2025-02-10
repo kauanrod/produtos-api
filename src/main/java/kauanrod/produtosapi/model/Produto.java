@@ -12,16 +12,16 @@ import java.util.UUID;
 public class Produto {
     @Id
     @Column(name = "id")
-    private UUID id;
+    private String id;
     private String nome;
     private String descricao;
     private Double preco;
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(String id) {
         this.id = id;
     }
 
