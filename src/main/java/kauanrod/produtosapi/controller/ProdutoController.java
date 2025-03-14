@@ -2,12 +2,9 @@ package kauanrod.produtosapi.controller;
 
 import kauanrod.produtosapi.model.Produto;
 import kauanrod.produtosapi.repository.ProdutoRepository;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @RestController
